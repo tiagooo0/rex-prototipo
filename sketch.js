@@ -9,9 +9,12 @@ let salto = 0;
 let Totalito = 0;
 let aux = 0;
 let aux1 = 0.09;
-let playerFrame;
-let playerFrame1;
-let playerFrame2;
+
+
+
+function preload() {
+	//aca iria preload de los assets
+}
 function setup() {
 	createCanvas(windowWidth, windowHeight);
 	background(0);
@@ -38,6 +41,9 @@ function draw() {
 	gameOver();
 	document.getElementById('points').innerHTML = Math.ceil(contador);
 }
+
+
+
 
 // Cosas de PowerUp --------------------------------------------------------------------------
 function createPowerUp() {
@@ -68,17 +74,8 @@ function createEnemyAlto() {
 }
 
 // Cosas del Player --------------------------------------------------------------------------
-function createPlayer() {
-  // let frame1	= loadImage('https://drive.google.com/drive/u/5/folders/1FNfrxAQg3AIKZ5LPc2EpfFAZO7nD54EF');
-	// let frame2 	= loadImage('https://drive.google.com/drive/u/5/folders/1FNfrxAQg3AIKZ5LPc2EpfFAZO7nD54EF');
-	// let frame3  = loadImage('https://drive.google.com/drive/u/5/folders/1FNfrxAQg3AIKZ5LPc2EpfFAZO7nD54EF');
-	// let correrAnimacion = loadAnimation(
-  //   frame1,
-	// 	frame2,
-	// 	frame3
-  // )
-	player = createSprite(100, height - 81, 40, 40);
-	//player.addAnimation('correr', correrAnimacion);
+function PlayerSprite() {
+//sprite player
 }
 
 function jumpPlayer() {
@@ -87,20 +84,19 @@ function jumpPlayer() {
 	}
 }
 
-function keyReleased() {
-	if (keyCode == 83) {
-		player.height += 10;
-	}
-}
 function keyPressed() {
 	if (keyCode === 32) {
 		jumpPlayer();
 		salto++;
 	}
-	if (keyCode === 83) {
+
+	if (keyCode === 40) {
 		player.height -= 10;
 	}
+
+	
 }
+
 
 //Cosas generales del juego --------------------------------------------------------------------------
 function deleteSprites() {
