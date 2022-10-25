@@ -1,0 +1,35 @@
+body {
+	overflow-y: hidden; /* Pongo para que no este la barra vertical */
+	overflow-x: hidden; /* Pongo para que no este la barra horisontal */
+	margin: 0;
+}
+
+h1.points {
+	position: absolute;
+	top: 0;
+	color: white;
+}
+
+div.GameOver {
+	position: absolute;
+	left: 35%;
+	top: 20%;
+	display: none;
+}
+
+div.GameOver * {
+	color: white;
+}
+
+div.GameOver div.info {
+	text-align: left;
+}
+
+h1.title {
+	font-size: 100px;
+	margin: 0;
+}
+
+h1.points {
+	margin-left: 30px;
+}
