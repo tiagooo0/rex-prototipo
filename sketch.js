@@ -88,12 +88,12 @@ function jumpPlayer() {
 }
 
 function keyReleased() {
-	if (keyCode == 32) {
+	if (keyCode == 83) {
 		player.height += 10;
 	}
 }
 function keyPressed() {
-	if (keyCode === 87) {
+	if (keyCode === 32) {
 		jumpPlayer();
 		salto++;
 	}
