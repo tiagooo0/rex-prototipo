@@ -88,7 +88,7 @@ function jumpPlayer() {
 }
 
 function keyReleased() {
-	if (keyCode == 83) {
+	if (keyCode == 32) {
 		player.height += 10;
 	}
 }

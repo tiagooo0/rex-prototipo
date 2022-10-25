@@ -1,6 +1,6 @@
 body {
 	overflow-y: hidden; /* Pongo para que no este la barra vertical */
-	overflow-x: hidden; /* Pongo para que no este la barra horisontal */
+	overflow-x: hidden; /* Pongo para que no este la barra horizontal */
 	margin: 0;
 }
 
